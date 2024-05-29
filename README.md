@@ -17,4 +17,13 @@ Disadvantages:
 3.Dependency on Third-party Service
 
 Authentication install - npm i firebase
-Storage install - npm i firebase/storage
+Storage install - npm install firebase @firebase/storage
+
+
+const storageRef = ref(storage, 'images/' + file.name);: This line creates a reference to a location in Firebase Storage where the file will be uploaded. It uses the ref function provided by Firebase Storage, specifying the storage object (previously initialized with Firebase) and the path where the file will be stored. The path in this example is 'images/' + file.name, where 'images/' is the directory within Firebase Storage where the file will be stored, and file.name is the name of the file being uploaded.
+
+await uploadBytes(storageRef, file);: This line uploads the file to the specified location in Firebase Storage. It uses the uploadBytes function provided by Firebase Storage, passing in the storageRef created in the previous step and the file object representing the file to be uploaded.
+
+console.log('File uploaded successfully!');: If the file is uploaded successfully without any errors, this line logs a success message to the console.
+
+
