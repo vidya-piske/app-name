@@ -15,8 +15,3 @@ Disadvantages:
 1.Limited Customization
 2.Cost
 3.Dependency on Third-party Service
-
-video link for react auth with firebase:
-https://www.youtube.com/watch?v=tlPeZchvRPM 
-
-theappdeveloper2.0@gmail.com
