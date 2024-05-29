@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Signupform from './components/Signupform';
-import Loginform from './components/Loginform';
+import SignUp from './components/SignUp';
+import LogIn from './components/LogIn';
 import './App.css';
+import FileUploader from './components/FileUploader';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/signup' element={<Signupform />} />
-        <Route path='/login' element={<Loginform />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<LogIn />} />
+        <Route path='/fileupload' element={<FileUploader/>} />
       </Routes>
     </BrowserRouter>
   );

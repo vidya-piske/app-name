@@ -15,3 +15,6 @@ Disadvantages:
 1.Limited Customization
 2.Cost
 3.Dependency on Third-party Service
+
+Authentication install - npm i firebase
+Storage install - npm i firebase/storage
