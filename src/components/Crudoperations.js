@@ -47,8 +47,6 @@ const Crudoperations = () => {
   return (
     <div>
          <div>
-            <h1>Hello</h1>
-            {console.log(users)}
             {users.map((user, index) => { 
                 return ( 
                     <div key={index}>
